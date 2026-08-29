@@ -5,13 +5,27 @@ body {
 .nav {
     background-color: cadetblue;
     color:darkblue;
+    height: min-content;
+    border: 1px;
+    border-radius: 1%;
     font-size:small;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    width: 200px;
-    height: min-content;
     margin: 20px;
     padding: 30px;
-    border: 1px;
-    border-radius: 1%;
+}
+
+#left {
+    width: 23.33%;
+    float:left;
+}
+
+#mid {
+    width: 66.67%;
+    margin: 0 auto;
+}
+
+#right {
+    width: 10%;
+    float:right;
 }
