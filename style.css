@@ -1,3 +1,17 @@
 body {
-    background-color: darkgoldenrod;
+    background-color:whitesmoke;
+}
+
+.nav {
+    background-color: cadetblue;
+    color:darkblue;
+    font-size:small;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    width: 200px;
+    height: min-content;
+    margin: 20px;
+    padding: 30px;
+    border: 1px;
+    border-radius: 1%;
 }
