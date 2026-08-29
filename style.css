@@ -5,20 +5,17 @@ body {
 .nav {
     background-color: cadetblue;
     color:darkblue;
-    height: min-content;
     border: 1px;
     border-radius: 1%;
     font-size:small;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    margin: 20px;
-    padding: 30px;
 }
 
 #left {
     width: 23.33%;
+    height: 300px;
     float:left;
-    height: 900px;
 }
 
 #mid {
@@ -28,8 +25,8 @@ body {
 }
 
 #right {
-    width: 10%;
-    float:right;
     background-color: chartreuse;
+    width: 10%;
     height: 900px;
+    float:right;
 }
