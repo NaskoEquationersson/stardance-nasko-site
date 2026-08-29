@@ -18,14 +18,18 @@ body {
 #left {
     width: 23.33%;
     float:left;
+    height: 900px;
 }
 
 #mid {
-    width: 66.67%;
+    width: 66.66%;
     margin: 0 auto;
+    background-color: antiquewhite;
 }
 
 #right {
     width: 10%;
     float:right;
+    background-color: chartreuse;
+    height: 900px;
 }
