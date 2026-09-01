@@ -2,6 +2,16 @@ body {
     background-color:whitesmoke;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+}
+
 .nav {
     background-color: cadetblue;
     color:darkblue;
@@ -13,22 +23,19 @@ body {
     height: 300px;
 }
 
-#left {
-    width: 15%;
-    height: 900px;
-    float:left;
+.left {
+    flex: 1;
+    height: 1000px;
 }
 
-#mid {
-    width: 65%;
-    margin: 0 auto;
+.middle {
+    flex: 1;
     background-color: antiquewhite;
-    height: 900px;
+    height: 1000px;
 }
 
-#right {
+.right {
+    flex: 1;
     background-color: chartreuse;
-    width: 20%;
-    height: 900px;
-    float:right;
+    height: 1000px;
 }
