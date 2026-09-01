@@ -10,6 +10,7 @@ body {
 
 .container {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .nav {
@@ -29,7 +30,7 @@ body {
 }
 
 .middle {
-    flex: 1;
+    flex: 3;
     background-color: antiquewhite;
     height: 1000px;
 }
