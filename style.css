@@ -79,7 +79,7 @@ body {
 .left {
     flex: 1;
     min-height: 1000px;
-    padding: 8px;
+    padding: 16px;
 }
 
 .middle {
@@ -88,11 +88,11 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 8px;
+    padding: 16px;
 }
 
 .right {
     flex: 1;
     min-height: 1000px;
-    padding: 8px;
+    padding: 16px;
 }
