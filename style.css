@@ -1,5 +1,5 @@
 body {
-    background-color:whitesmoke;
+    background-color:rgb(242, 239, 231);
 }
 
 * {
@@ -13,7 +13,43 @@ body {
     flex-wrap: wrap;
 }
 
-.nav {
+.cut-corners {
+    clip-path: polygon(
+        20px 0, calc(100% - 20px) 0, 100% 20px,
+        100% calc(100% - 20px), calc(100% - 20px) 100%,
+        20px 100%, 0 calc(100% - 20px), 0 20px
+    );
+}
+
+/*.notched-box {
+    position: relative;
+    clip-path: polygon(20px 0, 100% 0, 100% 100%, 0 100%, 0 20px);
+    background: rgb(51, 104, 160);
+} old design idea*/
+
+.ticket {
+    position: relative;
+    z-index: 1;
+    background-color: rgb(102, 163, 191);
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.ticket::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    width: calc(100% + 16px);
+    height: calc(100% + 16px);
+    background-color: rgb(51, 104, 160);
+    clip-path: inherit;
+    z-index: -1;
+}
+
+/*.nav {
     background-color: cadetblue;
     color:darkblue;
     border: 1px;
@@ -22,21 +58,30 @@ body {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     height: 300px;
+} Old code for nav*/
+
+.nav {
+    position: sticky;
+    top: 20px;
+}
+
+.right-image {
+    position: sticky;
+    top: 20px;
 }
 
 .left {
     flex: 1;
-    height: 1000px;
+    min-height: 1000px;
 }
 
 .middle {
     flex: 3;
-    background-color: antiquewhite;
-    height: 1000px;
+    background-color:rgb(200, 223, 219);
+    min-height: 1000px;
 }
 
 .right {
     flex: 1;
-    background-color: chartreuse;
-    height: 1000px;
+    min-height: 1000px;
 }
