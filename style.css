@@ -63,6 +63,10 @@ body {
 .nav {
     position: sticky;
     top: 20px;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
 
 .right-image {
@@ -79,6 +83,9 @@ body {
     flex: 3;
     background-color:rgb(200, 223, 219);
     min-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .right {
