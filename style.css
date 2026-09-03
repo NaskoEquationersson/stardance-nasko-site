@@ -1,5 +1,5 @@
 body {
-    background-color:rgb(242, 239, 231);
+    background-color: rgb(200, 223, 219);;
 }
 
 * {
@@ -79,18 +79,20 @@ body {
 .left {
     flex: 1;
     min-height: 1000px;
+    padding: 8px;
 }
 
 .middle {
     flex: 3;
-    background-color:rgb(200, 223, 219);
     min-height: 1000px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 8px;
 }
 
 .right {
     flex: 1;
     min-height: 1000px;
+    padding: 8px;
 }
