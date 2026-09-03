@@ -27,6 +27,10 @@ body {
     background: rgb(51, 104, 160);
 } old design idea*/
 
+.ticket-wrapper {
+    position: relative;
+}
+
 .ticket {
     position: relative;
     z-index: 1;
@@ -37,16 +41,14 @@ body {
     text-align: center;
 }
 
-.ticket::before {
-    content: "";
+.ticket-back {
     position: absolute;
+    z-index: -1;
     top: -8px;
     left: -8px;
     width: calc(100% + 16px);
     height: calc(100% + 16px);
     background-color: rgb(51, 104, 160);
-    clip-path: inherit;
-    z-index: -1;
 }
 
 /*.nav {
