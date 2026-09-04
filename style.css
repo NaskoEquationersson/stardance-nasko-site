@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(200, 223, 219);;
+    background-color: rgb(200, 223, 219);
 }
 
 * {
@@ -20,12 +20,6 @@ body {
         20px 100%, 0 calc(100% - 20px), 0 20px
     );
 }
-
-/*.notched-box {
-    position: relative;
-    clip-path: polygon(20px 0, 100% 0, 100% 100%, 0 100%, 0 20px);
-    background: rgb(51, 104, 160);
-} old design idea*/
 
 .ticket-wrapper {
     position: relative;
@@ -51,17 +45,6 @@ body {
     background-color: rgb(51, 104, 160);
 }
 
-/*.nav {
-    background-color: cadetblue;
-    color:darkblue;
-    border: 1px;
-    border-radius: 1%;
-    font-size:small;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    height: 300px;
-} Old code for nav*/
-
 .nav {
     position: sticky;
     top: 20px;
@@ -78,13 +61,13 @@ body {
 
 .left {
     flex: 1;
-    min-height: 1000px;
+    min-height: max-content;
     padding: 16px;
 }
 
 .middle {
     flex: 3;
-    min-height: 1000px;
+    min-height: max-content;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -93,6 +76,6 @@ body {
 
 .right {
     flex: 1;
-    min-height: 1000px;
+    min-height: max-content;
     padding: 16px;
 }
